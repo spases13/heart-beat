@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Ubuntu&family=Zilla+Slab&display=swap");
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: whitesmoke;
+  position: relative;
+}
+
+svg {
+  fill: transparent;
+  stroke-width: 4px;
+}
+
+.yassine {
+  background-color: #444;
+  position: absolute;
+  width: 20rem;
+  border: 5px solid #747474;
+  padding: 20px 0;
+  stroke: red;
+}
+
+.myName {
+  -webkit-animation: loop-colors 5s ease infinite alternate !important;
+          animation: loop-colors 5s ease infinite alternate !important;
+  position: absolute;
+  bottom: 5rem;
+  right: 5rem;
+  width: 10rem;
+}
+
+.btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 5rem;
+}
+
+.btn {
+  margin: 5px;
+  border: none;
+  font-family: 'Zilla Slab';
+  font-size: larger;
+  padding: 10px;
+  border-radius: 7px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out, -webkit-transform 0.1ms ease;
+  transition: all 0.2s ease-in-out, -webkit-transform 0.1ms ease;
+  transition: all 0.2s ease-in-out, transform 0.1ms ease;
+  transition: all 0.2s ease-in-out, transform 0.1ms ease, -webkit-transform 0.1ms ease;
+}
+
+.btn.play {
+  background-color: white;
+  color: green;
+  outline: 1px solid green;
+}
+
+.btn.stop {
+  background-color: white;
+  color: red;
+  outline: 1px solid red;
+}
+
+.btn.stop:hover {
+  background-color: red;
+  color: white;
+}
+
+.btn.play:hover {
+  background-color: green;
+  color: white;
+}
+
+.btn:active {
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
+}
+
+@-webkit-keyframes loop-colors {
+  0% {
+    stroke: #5050f0;
+  }
+  100% {
+    stroke: #da1f1f;
+  }
+}
+
+@keyframes loop-colors {
+  0% {
+    stroke: #5050f0;
+  }
+  100% {
+    stroke: #da1f1f;
+  }
+}
+/*# sourceMappingURL=style.css.map */

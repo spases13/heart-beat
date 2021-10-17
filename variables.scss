@@ -1,0 +1,25 @@
+$light-color: whitesmoke;
+$loop-colors: loop-colors 5s ease infinite alternate;
+$loop-colors-reverse-bg: loop-colors-reverse-bg 3s linear infinite
+	alternate-reverse 0.4s;
+
+$weight: (
+	'rqiq': 100,
+	'ghlid': 700,
+);
+
+$font: (
+	'pen': 'Dancing Script',
+);
+
+@function rainbow($i) {
+	@return rgb($i * 2 +10, $i * 2, ($i + 5) * 3);
+}
+
+@function weight($value) {
+	@return map-get($weight, $value);
+}
+
+@function font($value) {
+	@return map-get($font, $value);
+}
